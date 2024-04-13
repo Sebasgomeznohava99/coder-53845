@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #DFF0D8, #1E7E34);
+}
+
+.header-color{
+    background-color: linear-gradient(to bottom, #DFF0D8, #1E7E34);
+}   
+
+.button-borders{
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.search-bar{
+    border-radius: 50px;
+}
+
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+
+.nacimiento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    background-image: url(../img/fondo-header1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nacimiento div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    height: 100px;
+}
+
+.nacimiento div h2{
+    font-size: 70px;
+    background: linear-gradient(135deg, #DFF0D8 ,0%, rgba(105,255,226,1) 0%, rgba(3,255,154,1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nacimiento div .year{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.nacimiento button{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: 3px solid rgba(4,142,170,0.5);
+    background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(49,97,95,1) 0%, rgba(4,142,170,1) 60%);
+    transition: all 0.5s;
+    transform: translateZ(0);
+}
+
+.nacimiento button:hover {
+    transform: translateX(5px) translateY(-5px) translateZ(5px);
+    box-shadow: -5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.grid-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-item{
+    border: 5px solid rgba(4,142,170,0.5);
+    border-radius: 10px;
+    transition: ease 0.5s;
+    transform: translateZ(0);
+    box-shadow: -6px -6px 75px -23px rgba(0,0,0,0.62);
+    -webkit-box-shadow: -6px -6px 75px -23px rgba(0,0,0,0.62);
+    -moz-box-shadow: -6px -6px 75px -23px rgba(0,0,0,0.62);
+}
+
+.grid-item:hover{
+transform: translateY(5px) translateZ(5px);
+}
+
+.item1{
+    grid-row: span 2;
+}
+
+.item5{
+    grid-row: span 2;
+}
+
+.item8{
+    grid-column: span 2;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjetas div img{
+    width: 200px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.tarjetas div{
+    margin: 40px 60px;
+    width: 250px;
+    height: 305px;
+    border: 5px solid rgba(49,97,95,1);
+    padding: 10px;
+    text-align: center;
+    background-color:rgba(4,142,170,1);
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 20px;
+    transform: translateZ(0);
+    transition: 0.5s ease;
+}
+
+.tarjetas div:hover{
+    transform: translateX(20px) translateY(-10px) translateZ(10px);
+    box-shadow: -20px 20px 20px 3px rgba(255, 255, 255, 0.5);
+}
+
+.mi-carrusel{
+    width: 50%;
+    margin: 30px auto;
+    overflow: hidden;
+    height: 400px;
+}
+
+.informacion {
+    margin-left: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer{
+    width: 100%;
+    height:100%;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    background: linear-gradient(to bottom, #49aa25 0%, #1E7E34 40%);
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .redes-sociales{
+    width: 75px;
+    height: 70px;
+    background-color: rgba(49,97,95,1);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer .redes-sociales a i{
+    font-size: 40px;
+    color: white;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapa h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.map{
+margin: 30px;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 550px;
+}
+.comentario div{
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(6,77,22,1) 0%, rgba(3,255,154,1) 100%);
+    border: solid 3px #1E7E34;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.comments fieldset {
+    width: 400px;
+}
+
+.enviar {
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: 3px solid rgba(4,142,170,0.5);
+    background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(3,31,9,1) 0%, rgba(3,255,154,1) 100%);
+    transition: all 0.5s;
+    transform: translateZ(0);
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;
+}
+
+.enviar:hover {
+    transform: translateX(5px) translateY(-5px) translateZ(5px);
+    box-shadow: -5px 5px 5px rgba(0 ,0 ,0, 0.5);
+}
+
+.comments{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.comments label {
+    margin-bottom: 15px; /* Agrega espacio entre los label y los textarea */
+    display: block; /* Cambia el display a block para que ocupen toda la anchura y para que todo con lo que conviven inicie en lineas separadas*/
+    text-align: center; /* Centra el texto */
+}
+
+.comments input {
+    width: 90%; /* Haz que el textarea ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    background-color: aquamarine;
+}
+
+.comments textarea {
+    width: 90%; /* Haz que el textarea ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    background-color: aquamarine;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:920px){
+    .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 200px;
+            gap: 20px;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        } 
+        .item1{
+            grid-row: span 1;
+        }
+        
+        .item5{
+            grid-row: span 1;
+        }
+        
+        .item8{
+            grid-column: span 1;
+        }
+        .item9{
+            grid-column: span 2;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+            .email{
+                width: 50px;
+                position: fixed;
+                bottom: 0px;
+                right: 10px;
+            }
+            .whatsapp{
+                width: 50px;
+                position: fixed;
+                bottom: 40  px;
+            }
+            .mapa h2{
+                    color: black;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    font-size: 18px;
+        }
+    }
+
+@media screen and (max-width:700px){
+    .mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 20px;
+    } 
+    .item9{
+        grid-column: span 1;
+    }
+}
+
+@media screen and (max-width:615px){
+    .comentario div{
+        height: 400px;
+        width: 400px;
+        text-align: center;
+        background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(6,77,22,1) 0%, rgba(3,255,154,1) 100%);
+        border: solid 3px #1E7E34;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .enviar {
+        height: 40px;
+        width: 100px;
+        border-radius: 15px;
+        border: 3px solid rgba(4,142,170,0.5);
+        background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(3,31,9,1) 0%, rgba(3,255,154,1) 100%);
+        transition: all 0.5s;
+        transform: translateZ(0);
+        margin: 2px;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        vertical-align: center;
+    }
+}
+
+@media screen and (max-width:610px){
+    .mapa h2{
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .map{
+        width:400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .nacimiento div h2{
+        font-size: 50px;
+        background: linear-gradient(135deg, #DFF0D8 ,0%, rgba(105,255,226,1) 0%, rgba(3,255,154,1) 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .nacimiento div .year{
+        text-align: center;
+        padding-top: 5px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .nacimiento button{
+        height: 40px;
+        width: 100px;
+        border-radius: 15px;
+        border: 3px solid rgba(4,142,170,0.5);
+        background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(49,97,95,1) 0%, rgba(4,142,170,1) 60%);
+        transition: all 0.5s;
+        transform: translateZ(0);
+    }
+}
+
+@media screen and (max-width:410px){
+    .map{
+        width:300px;
+        height: 300px;
+    }
+    .enviar {
+        height: 25px;
+        width: 80px;
+        border-radius: 15px;
+        border: 3px solid rgba(4,142,170,0.5);
+        background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(3,31,9,1) 0%, rgba(3,255,154,1) 100%);
+        transition: all 0.5s;
+        transform: translateZ(0);
+        margin: 3px;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: center;
+        vertical-align: center;
+    }
+    .comentario div{
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        background: linear-gradient(135deg, rgba(15,76,82,1) 0%, rgba(6,77,22,1) 0%, rgba(3,255,154,1) 100%);
+        border: solid 3px #1E7E34;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .comments label {
+        margin-bottom: 5px; /* Agrega espacio entre los label y los textarea */
+        display: block; /* Cambia el display a block para que ocupen toda la anchura y para que todo con lo que conviven inicie en lineas separadas*/
+        text-align: center; /* Centra el texto */
+    }
+    .comments input {
+        width: 50%; /* Haz que el textarea ocupe todo el ancho disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+        background-color: aquamarine;
+    }
+    
+    .comments textarea {
+        width: 50%; /* Haz que el textarea ocupe todo el ancho disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+        background-color: aquamarine;
+    }
+    .comments p, .comments fieldset{
+        width: 250px;
+        height: 195 px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:400px){
+        footer ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            flex-direction: column;
+        }
+        footer ul li {
+            margin: 0px;
+        }
+        footer{
+            height:100%;
+        }
+    }
+
+    @media screen and (max-width: 370px){
+        .nacimiento div h2{
+            font-size: 45px;
+            background: linear-gradient(135deg, #DFF0D8 ,0%, rgba(105,255,226,1) 0%, rgba(3,255,154,1) 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nacimiento div .year{
+            text-align: center;
+            padding-top: 5px;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+
+/*
+.comments {
+    position: relative;
+    top: 30px;
+    display: grid; /* Cambia a display grid 
+    grid-template-columns: repeat(3, 1fr); /* Una columna 
+    gap: 10px; /* Espacio entre filas 
+}
+
+.comments label {
+    text-align: center;
+}
+
+.comments textarea {
+    width: calc(100% - 20px); /* Ocupa todo el ancho disponible menos el espacio del gap 
+}
+DE ESTA MANERA SE HACE CON GRID */
+
